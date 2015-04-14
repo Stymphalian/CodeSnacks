@@ -1,0 +1,29 @@
+{
+	"auto_complete": false,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/IDLE (SL).tmTheme",
+	"enable_tab_scrolling": false,
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"MarkdownEditing",
+		"Markdown",
+		"Vintage"
+	],
+	"margin": 0,
+	"rulers":
+	[
+		80
+	],
+	"scala_worksheet_sync_views": true,
+	"scroll_past_end": false,
+	"shift_tab_unindent": true,
+	"show_panel_on_build": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"tree_animation_enabled": false,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}
