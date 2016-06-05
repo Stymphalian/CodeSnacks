@@ -39,19 +39,19 @@ function MyDiff()
 endfunction
 
 "All the .vimrc settings for different plugins
-source ~/.vim/bundle/ctrlp.vim/.vimrc
-source ~/.vim/bundle/NERDCommenter/.vimrc
-"source ~/.vim/bundle/syntastic/.vimrc
-source ~/.vim/bundle/vim-airline/.vimrc
-source ~/.vim/bundle/vim-buffergator/.vimrc
-"source ~/.vim/bundle/vim-colors-solarized/.vimrc
-source ~/.vim/bundle/vim-multiple-cursors/.vimrc
-source ~/.vim/bundle/nerdtree/.vimrc
-source ~/.vim/bundle/vim-nerdtree-tabs/.vimrc
-source ~/.vim/bundle/vim-monokai/.vimrc
-source ~/.vim/bundle/molokai/.vimrc
-"source ~/.vim/bundle/vim-go/.vimrc
-source ~/.vim/bundle/vim-numbertoggle/.vimrc
+source ~/.vim/bundle_vimrc/ctrlp.vim/.vimrc
+source ~/.vim/bundle_vimrc/NERDCommenter/.vimrc
+"source ~/.vim/bundle_vimrc/syntastic/.vimrc
+source ~/.vim/bundle_vimrc/vim-airline/.vimrc
+source ~/.vim/bundle_vimrc/vim-buffergator/.vimrc
+"source ~/.vim/bundle_vimrc/vim-colors-solarized/.vimrc
+source ~/.vim/bundle_vimrc/vim-multiple-cursors/.vimrc
+source ~/.vim/bundle_vimrc/nerdtree/.vimrc
+source ~/.vim/bundle_vimrc/vim-nerdtree-tabs/.vimrc
+source ~/.vim/bundle_vimrc/vim-monokai/.vimrc
+source ~/.vim/bundle_vimrc/molokai/.vimrc
+"source ~/.vim/bundle_vimrc/vim-go/.vimrc
+source ~/.vim/bundle_vimrc/vim-numbertoggle/.vimrc
 
 "Personal settings
 set hidden
