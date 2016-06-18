@@ -8,6 +8,13 @@ jjr() { source ~/.bash_aliases && echo "bash aliases reloaded"; }
 
 ### Easy access to work.sh
 jjw() { source ~/work.sh; }
+
+### Shutdown the virtual machine
+jjs() { sudo shutdown -P now; }
+
+##-----------------------------------------------------------------------------
+## ----------------------------------------------------------------------------
+## Misc Aliases
 noin() { ./run.sh; }
 
 ### Make it easier to navigate back up directories
