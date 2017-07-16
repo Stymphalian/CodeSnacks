@@ -70,6 +70,7 @@ set ai
 set si
 set nobackup
 set backupdir=~/.vimbak
+set undodir=~/.vimundo
 set wildmenu
 set timeoutlen=350
 
