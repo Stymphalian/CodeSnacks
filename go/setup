@@ -1,0 +1,4 @@
+#!/usr/bin/env bash 
+export GOPATH=$PWD/$1
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:~/dev/local/go/bin:$GOBIN

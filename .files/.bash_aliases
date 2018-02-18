@@ -1,16 +1,6 @@
-bb=~/dev/bazel-bin
-
-jjcp() { cp -rfL "$@" $HOME/shared/; }
-
 ### Easy access to the alias file
 jja() { vim ~/.bash_aliases  && jjr; }
 jjr() { source ~/.bash_aliases && echo "bash aliases reloaded"; }
-
-### Easy access to work.sh
-jjw() { source ~/work.sh; }
-
-### Shutdown the virtual machine
-jjs() { sudo shutdown -P now; }
 
 ##-----------------------------------------------------------------------------
 ## ----------------------------------------------------------------------------

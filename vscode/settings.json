@@ -1,0 +1,26 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 12,
+  "editor.rulers": [ 80 ],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "workbench.sideBar.location": "left",
+  "extensions.ignoreRecommendations": false,
+  "window.zoomLevel": 0,
+  "python.linting.pylintPath": "/usr/local/bin/pylint",
+  "python.formatting.autopep8Path": "/home/jordan/.local/bin/autopep8",
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "[gradle]": {},
+  "files.associations": {
+    "*.gradle": "gradle"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "java.home": "/usr/lib/jvm/java-8-openjdk-amd64",
+
+  // go settings
+  "go.gopath": "/home/jordan/dev/goenv/1.9.3",
+  "go.goroot": "/home/jordan/dev/local/go",
+  "go.formatTool": "goimports",
+}

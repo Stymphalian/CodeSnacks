@@ -2,7 +2,7 @@
 VERSION=1.9.3
 TMPDIR=/tmp
 
-jajecho Setup golang...
+echo Setup golang...
 mkdir -p $TMPDIR/setup_golang/
 
 pushd $TMPDIR/setup_golang
@@ -18,7 +18,7 @@ ln -s $TMPDIR/setup_golang/go ~/go1.4
 popd
 
 # Clone the go source and install
-pushd ~/dev2/local
+pushd ~/dev/local
 git clone https://go.googlesource.com/go
 cd go
 git checkout go$VERSION

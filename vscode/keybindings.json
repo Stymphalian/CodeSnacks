@@ -1,0 +1,13 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "meta+z meta+x",
+    "command": "workbench.files.action.refreshFilesExplorer",
+    "when": "editorTextFocus"
+  }
+
+  {
+    "key": "ctrl+j",
+    "command": "editor.action.joinLines"
+  },
+]
