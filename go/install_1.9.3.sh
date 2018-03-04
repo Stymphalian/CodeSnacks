@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-VERSION=1.10
+VERSION=1.9.3
 TMPDIR=/tmp
 
 echo Setup golang...
@@ -26,5 +26,5 @@ cd src
 ./all.bash
 popd
 
-# remove the bootstrap version
+# # remove the bootstrap version
 rm ~/go1.4
