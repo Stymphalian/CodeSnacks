@@ -11,3 +11,5 @@ Currently this only has JS snippets.
 * Python common snippets
 * Config settings for IDE (Visual Studio,Eclipse)
 * bash.rc
+
+testing some changes
