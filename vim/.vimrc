@@ -41,7 +41,7 @@ endfunction
 "All the .vimrc settings for different plugins
 source ~/.vim/bundle_vimrc/ctrlp.vim/.vimrc
 source ~/.vim/bundle_vimrc/NERDCommenter/.vimrc
-source ~/.vim/bundle_vimrc/syntastic/.vimrc
+"source ~/.vim/bundle_vimrc/syntastic/.vimrc
 source ~/.vim/bundle_vimrc/vim-airline/.vimrc
 source ~/.vim/bundle_vimrc/vim-buffergator/.vimrc
 "source ~/.vim/bundle_vimrc/vim-colors-solarized/.vimrc
@@ -52,6 +52,7 @@ source ~/.vim/bundle_vimrc/vim-monokai/.vimrc
 source ~/.vim/bundle_vimrc/molokai/.vimrc
 "source ~/.vim/bundle_vimrc/vim-go/.vimrc
 source ~/.vim/bundle_vimrc/vim-numbertoggle/.vimrc
+source ~/.vim/bundle_vimrc/rust.vim/.vimrc
 
 "Personal settings
 set hidden
