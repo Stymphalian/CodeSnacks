@@ -41,11 +41,11 @@ endfunction
 "All the .vimrc settings for different plugins
 source ~/.vim/bundle_vimrc/ctrlp.vim/.vimrc
 source ~/.vim/bundle_vimrc/NERDCommenter/.vimrc
-"source ~/.vim/bundle_vimrc/syntastic/.vimrc
+source ~/.vim/bundle_vimrc/syntastic/.vimrc
 source ~/.vim/bundle_vimrc/vim-airline/.vimrc
 source ~/.vim/bundle_vimrc/vim-buffergator/.vimrc
 "source ~/.vim/bundle_vimrc/vim-colors-solarized/.vimrc
-source ~/.vim/bundle_vimrc/vim-multiple-cursors/.vimrc
+"source ~/.vim/bundle_vimrc/vim-multiple-cursors/.vimrc
 source ~/.vim/bundle_vimrc/nerdtree/.vimrc
 source ~/.vim/bundle_vimrc/vim-nerdtree-tabs/.vimrc
 source ~/.vim/bundle_vimrc/vim-monokai/.vimrc
@@ -70,6 +70,7 @@ set ai
 set si
 set nobackup
 set backupdir=~/.vimbak
+set directory=~/.swap
 set undodir=~/.vimundo
 set wildmenu
 set timeoutlen=350
@@ -77,6 +78,7 @@ set timeoutlen=350
 "keymappings
 inoremap <C-Space> <C-[>
 inoremap jk <C-[>
+vnoremap jk <C-[>
 nnoremap <C-J> <C-E>
 nnoremap <C-K> <C-Y>
 nnoremap HH H
