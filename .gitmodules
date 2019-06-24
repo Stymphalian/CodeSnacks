@@ -1,36 +1,36 @@
 [submodule "vim/pack/pack/start/ctrlp"]
-	path = vim/pack/pack/start/ctrlp
+	path = vim/pack/default/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "vim/pack/pack/start/molokai"]
-	path = vim/pack/pack/start/molokai
+	path = vim/pack/default/start/molokai
 	url = https://github.com/tomasr/molokai
 [submodule "vim/pack/pack/start/nerdcommenter"]
-	path = vim/pack/pack/start/nerdcommenter
+	path = vim/pack/default/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
 [submodule "vim/pack/pack/start/nerdtree"]
-	path = vim/pack/pack/start/nerdtree
+	path = vim/pack/default/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "vim/pack/pack/start/rust.vim"]
-	path = vim/pack/pack/start/rust.vim
+	path = vim/pack/default/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
 [submodule "vim/pack/pack/start/syntastic"]
-	path = vim/pack/pack/start/syntastic
+	path = vim/pack/default/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic
 [submodule "vim/pack/pack/start/vim-airline"]
-	path = vim/pack/pack/start/vim-airline
+	path = vim/pack/default/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "vim/pack/pack/start/vim-buffergator"]
-	path = vim/pack/pack/start/vim-buffergator
+	path = vim/pack/default/start/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator
 [submodule "vim/pack/pack/start/vim-monokai"]
-	path = vim/pack/pack/start/vim-monokai
+	path = vim/pack/default/start/vim-monokai
 	url = https://github.com/sickill/vim-monokai
 [submodule "vim/pack/pack/start/vim-numbertoggle"]
-	path = vim/pack/pack/start/vim-numbertoggle
+	path = vim/pack/default/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
-[submodule "vim/pack/pack/start/YouCompleteMe"]
-	path = vim/pack/pack/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe
 [submodule "vim/pack/pack/start/vim-airline-themes"]
-	path = vim/pack/pack/start/vim-airline-themes
+	path = vim/pack/default/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "vim/pack/default/start/YouCompleteMe"]
+	path = vim/pack/default/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
