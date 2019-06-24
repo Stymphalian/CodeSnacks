@@ -18,6 +18,8 @@ nmap <leader>bk :BuffergatorMruCycleNext<cr>
 " View the entire list of buffers open
 nmap <leader>bl :BuffergatorOpen<cr>
 
-" Shared bindings from Solution #1 from earlier
+" Create a new buffer/tab
 nmap <leader>T :enew<cr>
+
+" Close the current viewed tab 
 nmap <leader>bq :bp <BAR> bd #<cr>

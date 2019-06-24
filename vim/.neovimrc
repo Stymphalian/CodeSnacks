@@ -1,0 +1,6 @@
+" Neovim specific settings
+" -----------------------------------------------------------------------------
+
+"Neovim terminal emulator mode
+tnoremap jk  <C-\><C-n>|                 "Map the escape sequence to "j + k"
+nnoremap <leader>t  i<up><C-R>|          "Run the last command from the terminal
