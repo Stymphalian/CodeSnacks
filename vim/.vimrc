@@ -5,7 +5,7 @@ set nocompatible
 let mapleader=','
 
 " ----------------------------------------------------------------------------
-" Source in some extra vimrcs
+" Start Plugins!!
 " ----------------------------------------------------------------------------
 syntax on
 filetype plugin indent on
@@ -21,6 +21,19 @@ source ~/.vim/pack_vimrc/rust.vim/.vimrc
 source ~/.vim/pack_vimrc/vim-airline/.vimrc
 source ~/.vim/pack_vimrc/vim-buffergator/.vimrc  
 source ~/.vim/pack_vimrc/vim-numbertoggle/.vimrc
+
+if executable('rls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'rls',
+        \ 'cmd': {server_info->['rustup', 'run', 'stable', 'rls']},
+        \ 'workspace_config': {'rust': {'clippy_preference': 'on'}},
+        \ 'whitelist': ['rust'],
+        \ })
+endif
+let g:lsp_diagnostics_enabled = 0
+" ----------------------------------------------------------------------------
+" End Plugins!!
+" ----------------------------------------------------------------------------
 
 " ----------------------------------------------------------------------------
 " Personal settings
@@ -115,3 +128,4 @@ endif
 if !has('nvim')
   source ~/.vim/.classicvimrc
 endif
+
