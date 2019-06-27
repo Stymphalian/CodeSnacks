@@ -58,6 +58,9 @@ source ~/.vim/pack_vimrc/molokai/.vimrc              "empty
 packadd vim-monokai 
 source ~/.vim/pack_vimrc/vim-monokai/.vimrc          "empty
 
+packadd vim-codefmt
+source ~/.vim/pack_vimrc/vim-codefmt/.vimrc          "empty
+
 
 " ----------------------------------------------------------------------------
 " End Plugins!!
