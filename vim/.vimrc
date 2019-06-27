@@ -29,7 +29,7 @@ packadd vim-buffergator
 source ~/.vim/pack_vimrc/vim-buffergator/.vimrc      "<leader>b
 
 packadd syntastic 
-source ~/.vim/pack_vimrc/syntastic/.vimrc           "<leader>s
+source ~/.vim/pack_vimrc/syntastic/.vimrc            "<leader>s
 
 packadd YouCompleteMe
 source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
@@ -46,8 +46,8 @@ source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
 "packadd asyncomplete.vim 
 "source ~/.vim/pack_vimrc/asyncomplete.vim/.vimrc     "<leader>g
 
-"packadd rust.vim  
-"source ~/.vim/pack_vimrc/rust.vim/.vimrc             "<leader>r
+packadd rust.vim  
+source ~/.vim/pack_vimrc/rust.vim/.vimrc             "<leader>r
 
 packadd vim-airline 
 source ~/.vim/pack_vimrc/vim-airline/.vimrc          "<leader>
@@ -65,10 +65,10 @@ packadd vim-monokai
 source ~/.vim/pack_vimrc/vim-monokai/.vimrc          "empty
 
 "packadd vim-codefmt
-"source ~/.vim/pack_vimrc/vim-codefmt/.vimrc         "empty
+"source ~/.vim/pack_vimrc/vim-codefmt/.vimrc          "empty
 
-packadd vim-autoformat
-source ~/.vim/pack_vimrc/vim-autoformat/.vimrc       "empty
+"packadd vim-autoformat
+"source ~/.vim/pack_vimrc/vim-autoformat/.vimrc       "empty
 
 " ----------------------------------------------------------------------------
 " End Plugins!!
