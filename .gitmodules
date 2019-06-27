@@ -49,3 +49,12 @@
 [submodule "vim/pack/default/opt/vim-codefmt"]
 	path = vim/pack/default/opt/vim-codefmt
 	url = https://github.com/google/vim-codefmt
+[submodule "vim/pack/default/opt/vim-maktaba"]
+	path = vim/pack/default/opt/vim-maktaba
+	url = https://github.com/google/vim-maktaba
+[submodule "vim/pack/default/opt/vim-glaive"]
+	path = vim/pack/default/opt/vim-glaive
+	url = https://github.com/google/vim-glaive
+[submodule "vim/pack/default/opt/vim-autoformat"]
+	path = vim/pack/default/opt/vim-autoformat
+	url = https://github.com/Chiel92/vim-autoformat

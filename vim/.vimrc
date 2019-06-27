@@ -10,6 +10,12 @@ let mapleader=','
 syntax on
 filetype plugin indent on
 
+"packadd vim-maktaba
+"source ~/.vim/pack_vimrc/vim-maktaba/.vimrc          "empty
+
+"packadd vim-glaive
+"source ~/.vim/pack_vimrc/vim-glaive/.vimrc           "empty
+
 packadd ctrlp 
 source ~/.vim/pack_vimrc/ctrlp/.vimrc                "<leader>p
 
@@ -58,9 +64,11 @@ source ~/.vim/pack_vimrc/molokai/.vimrc              "empty
 packadd vim-monokai 
 source ~/.vim/pack_vimrc/vim-monokai/.vimrc          "empty
 
-packadd vim-codefmt
-source ~/.vim/pack_vimrc/vim-codefmt/.vimrc          "empty
+"packadd vim-codefmt
+"source ~/.vim/pack_vimrc/vim-codefmt/.vimrc         "empty
 
+packadd vim-autoformat
+source ~/.vim/pack_vimrc/vim-autoformat/.vimrc       "empty
 
 " ----------------------------------------------------------------------------
 " End Plugins!!
