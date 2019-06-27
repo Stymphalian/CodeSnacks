@@ -1,2 +1,2 @@
 """YouCompleteMe
-nnoremap <leader>rj :YcmCompleter GoTo<CR>
+nnoremap <leader>gd :YcmCompleter GoTo<CR>

@@ -9,28 +9,56 @@ let mapleader=','
 " ----------------------------------------------------------------------------
 syntax on
 filetype plugin indent on
-source ~/.vim/pack_vimrc/ctrlp/.vimrc
-source ~/.vim/pack_vimrc/nerdcommenter/.vimrc
-"source ~/.vim/pack_vimrc/syntastic/.vimrc 
-source ~/.vim/pack_vimrc/vim-airline-themes/.vimrc 
-source ~/.vim/pack_vimrc/vim-monokai/.vimrc 
-source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc
-source ~/.vim/pack_vimrc/molokai/.vimrc
-source ~/.vim/pack_vimrc/nerdtree/.vimrc 
-source ~/.vim/pack_vimrc/rust.vim/.vimrc     
-source ~/.vim/pack_vimrc/vim-airline/.vimrc
-source ~/.vim/pack_vimrc/vim-buffergator/.vimrc  
-source ~/.vim/pack_vimrc/vim-numbertoggle/.vimrc
 
-if executable('rls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'rls',
-        \ 'cmd': {server_info->['rustup', 'run', 'stable', 'rls']},
-        \ 'workspace_config': {'rust': {'clippy_preference': 'on'}},
-        \ 'whitelist': ['rust'],
-        \ })
-endif
-let g:lsp_diagnostics_enabled = 0
+packadd ctrlp 
+source ~/.vim/pack_vimrc/ctrlp/.vimrc                "<leader>p
+
+packadd nerdtree  
+source ~/.vim/pack_vimrc/nerdtree/.vimrc             "<leader>d
+
+packadd nerdcommenter
+source ~/.vim/pack_vimrc/nerdcommenter/.vimrc        "<leader>/
+
+packadd vim-buffergator  
+source ~/.vim/pack_vimrc/vim-buffergator/.vimrc      "<leader>b
+
+packadd syntastic 
+source ~/.vim/pack_vimrc/syntastic/.vimrc           "<leader>s
+
+packadd YouCompleteMe
+source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
+
+"packadd async.vim 
+"source ~/.vim/pack_vimrc/async.vim/.vimrc            "<leader>g
+
+"packadd vim-lsp  
+"source ~/.vim/pack_vimrc/vim-lsp/.vimrc              "<leader>g
+"
+"packadd asyncomplete-lsp.vim  
+"source ~/.vim/pack_vimrc/asyncomplete-lsp.vim/.vimrc "<leader>g
+
+"packadd asyncomplete.vim 
+"source ~/.vim/pack_vimrc/asyncomplete.vim/.vimrc     "<leader>g
+
+"packadd rust.vim  
+"source ~/.vim/pack_vimrc/rust.vim/.vimrc             "<leader>r
+
+packadd vim-airline 
+source ~/.vim/pack_vimrc/vim-airline/.vimrc          "<leader>
+
+packadd vim-numbertoggle  
+source ~/.vim/pack_vimrc/vim-numbertoggle/.vimrc     "empty
+
+packadd vim-airline-themes 
+source ~/.vim/pack_vimrc/vim-airline-themes/.vimrc   "empty
+
+packadd molokai 
+source ~/.vim/pack_vimrc/molokai/.vimrc              "empty
+
+packadd vim-monokai 
+source ~/.vim/pack_vimrc/vim-monokai/.vimrc          "empty
+
+
 " ----------------------------------------------------------------------------
 " End Plugins!!
 " ----------------------------------------------------------------------------
