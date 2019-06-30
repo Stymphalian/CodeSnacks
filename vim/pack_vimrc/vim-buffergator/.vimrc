@@ -15,11 +15,5 @@ nmap <leader>bj :BuffergatorMruCyclePrev<cr>
 " Go to the next buffer open
 nmap <leader>bk :BuffergatorMruCycleNext<cr>
 
-" View the entire list of buffers open
-nmap <leader>bl :BuffergatorOpen<cr>
-
-" Create a new buffer/tab
-nmap <leader>T :enew<cr>
-
 " Close the current viewed tab 
 nmap <leader>bq :bp <BAR> bd #<cr>

@@ -10,65 +10,65 @@ let mapleader=','
 syntax on
 filetype plugin indent on
 
-"packadd vim-maktaba
 "source ~/.vim/pack_vimrc/vim-maktaba/.vimrc          "empty
+"packadd vim-maktaba
 
-"packadd vim-glaive
 "source ~/.vim/pack_vimrc/vim-glaive/.vimrc           "empty
+"packadd vim-glaive
 
-packadd ctrlp 
 source ~/.vim/pack_vimrc/ctrlp/.vimrc                "<leader>p
+packadd ctrlp 
 
-packadd nerdtree  
 source ~/.vim/pack_vimrc/nerdtree/.vimrc             "<leader>d
+packadd nerdtree  
 
-packadd nerdcommenter
 source ~/.vim/pack_vimrc/nerdcommenter/.vimrc        "<leader>/
+packadd nerdcommenter
 
-packadd vim-buffergator  
 source ~/.vim/pack_vimrc/vim-buffergator/.vimrc      "<leader>b
+packadd vim-buffergator  
 
-packadd syntastic 
 source ~/.vim/pack_vimrc/syntastic/.vimrc            "<leader>s
+packadd syntastic 
 
-packadd YouCompleteMe
 source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
+packadd YouCompleteMe
 
-"packadd async.vim 
 "source ~/.vim/pack_vimrc/async.vim/.vimrc            "<leader>g
+"packadd async.vim 
 
-"packadd vim-lsp  
 "source ~/.vim/pack_vimrc/vim-lsp/.vimrc              "<leader>g
-"
-"packadd asyncomplete-lsp.vim  
+"packadd vim-lsp  
+
 "source ~/.vim/pack_vimrc/asyncomplete-lsp.vim/.vimrc "<leader>g
+"packadd asyncomplete-lsp.vim  
 
-"packadd asyncomplete.vim 
 "source ~/.vim/pack_vimrc/asyncomplete.vim/.vimrc     "<leader>g
+"packadd asyncomplete.vim 
 
-packadd rust.vim  
 source ~/.vim/pack_vimrc/rust.vim/.vimrc             "<leader>r
+packadd rust.vim  
 
-packadd vim-airline 
 source ~/.vim/pack_vimrc/vim-airline/.vimrc          "<leader>
+packadd vim-airline 
 
-packadd vim-numbertoggle  
 source ~/.vim/pack_vimrc/vim-numbertoggle/.vimrc     "empty
+packadd vim-numbertoggle  
 
-packadd vim-airline-themes 
 source ~/.vim/pack_vimrc/vim-airline-themes/.vimrc   "empty
+packadd vim-airline-themes 
 
-packadd molokai 
 source ~/.vim/pack_vimrc/molokai/.vimrc              "empty
+packadd molokai 
 
-packadd vim-monokai 
 source ~/.vim/pack_vimrc/vim-monokai/.vimrc          "empty
+packadd vim-monokai 
 
-"packadd vim-codefmt
 "source ~/.vim/pack_vimrc/vim-codefmt/.vimrc          "empty
+"packadd vim-codefmt
 
-"packadd vim-autoformat
 "source ~/.vim/pack_vimrc/vim-autoformat/.vimrc       "empty
+"packadd vim-autoformat
 
 " ----------------------------------------------------------------------------
 " End Plugins!!
@@ -87,6 +87,7 @@ set shiftwidth=2 "number of spaces to use for each auto-indent
 set expandtab    "expand a tab characters into the space chars
 set autoindent   "automatically indent when starting a new line
 set smartindent  "do c-like indenting when possible
+set nowrap       "don't wrap the lines if it is longer than the split
 
 "makes insert-mode backspace work as expected
 "makes insert-mode arrow keys work as expected
@@ -147,6 +148,9 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 
+nnoremap <leader>ve  :split ~/.vim/.vimrc<cr>Gj|  "Open the vimrc in a new vertical 
+nnoremap <leader>vr  :source $MYVIMRC<cr>|        "Source the vimrc into the session
+
 " ---------------------------------------------------------------------------
 " Make things look fancy.
 " ---------------------------------------------------------------------------
@@ -167,4 +171,8 @@ endif
 if !has('nvim')
   source ~/.vim/.classicvimrc
 endif
+
+" ----------------------------------------------------------------------------
+" On the spot vim commands
+" ----------------------------------------------------------------------------
 
