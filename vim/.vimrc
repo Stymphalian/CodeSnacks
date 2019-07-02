@@ -70,6 +70,9 @@ packadd vim-monokai
 "source ~/.vim/pack_vimrc/vim-autoformat/.vimrc       "empty
 "packadd vim-autoformat
 
+"source ~/.vim/pack_vimrc/vim-easymotion/.vimrc       "empty
+"packadd vim-easymotion
+
 " ----------------------------------------------------------------------------
 " End Plugins!!
 " ----------------------------------------------------------------------------
@@ -148,8 +151,8 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 
-nnoremap <leader>ve  :split ~/.vim/.vimrc<cr>Gj|  "Open the vimrc in a new vertical 
-nnoremap <leader>vr  :source $MYVIMRC<cr>|        "Source the vimrc into the session
+nnoremap <leader>ve  :e ~/.vim/.vimrc<cr>Gj|  "Open the vimrc in a new vertical 
+nnoremap <leader>vr  :source $MYVIMRC<cr>|    "Source the vimrc into the session
 
 " ---------------------------------------------------------------------------
 " Make things look fancy.

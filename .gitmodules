@@ -58,3 +58,6 @@
 [submodule "vim/pack/default/opt/vim-autoformat"]
 	path = vim/pack/default/opt/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat
+[submodule "vim/pack/default/opt/vim-easymotion"]
+	path = vim/pack/default/opt/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion
