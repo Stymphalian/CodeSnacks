@@ -28,8 +28,11 @@ packadd nerdcommenter
 source ~/.vim/pack_vimrc/vim-buffergator/.vimrc      "<leader>b
 packadd vim-buffergator  
 
-source ~/.vim/pack_vimrc/syntastic/.vimrc            "<leader>s
+source ~/.vim/pack_vimrc/syntastic/.vimrc            "empty
 packadd syntastic 
+
+source ~/.vim/pack_vimrc/vim-signify/.vimrc          "<leader>c
+packadd vim-signify
 
 source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
 packadd YouCompleteMe
@@ -58,11 +61,11 @@ packadd vim-numbertoggle
 source ~/.vim/pack_vimrc/vim-airline-themes/.vimrc   "empty
 packadd vim-airline-themes 
 
-source ~/.vim/pack_vimrc/molokai/.vimrc              "empty
-packadd molokai 
+"source ~/.vim/pack_vimrc/molokai/.vimrc              "empty
+"packadd molokai 
 
-source ~/.vim/pack_vimrc/vim-monokai/.vimrc          "empty
-packadd vim-monokai 
+"source ~/.vim/pack_vimrc/vim-monokai/.vimrc          "empty
+"packadd vim-monokai 
 
 "source ~/.vim/pack_vimrc/vim-codefmt/.vimrc          "empty
 "packadd vim-codefmt
@@ -82,7 +85,7 @@ packadd vim-monokai
 " ----------------------------------------------------------------------------
 set hidden       "When a buffer is abandoned then unload the buffer
 set autoread     "auto-reload the file if it is detectedd as changed
-set autochdir    "change to the directoy which contains the open file
+"set autochdir    "change to the directoy which contains the open file
 
 set smarttab     "when tab is pressed use tabstop number of spaces
 set tabstop=2    "number of spaces a tab in the file counts for
