@@ -181,4 +181,12 @@ endif
 " ----------------------------------------------------------------------------
 " On the spot vim commands
 " ----------------------------------------------------------------------------
+" <op> iB  -- apply operator on inner block
+" <op> aB  -- apply operator on block
+" <op> i"  -- apply operator on charcters between quote marks
+" <op> a"  -- apply operator on charcters between quote marks
+
+augroup rust_autocmds
+  autocmd FileType rust iabbrev <buffer> jjlog  println!("@@@@ {:?}",
+augroup END
 
