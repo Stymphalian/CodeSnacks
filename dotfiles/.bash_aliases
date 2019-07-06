@@ -2,17 +2,20 @@
 jja() { vim ~/.bash_aliases  && jjr; }
 jjr() { source ~/.bash_aliases && echo "bash aliases reloaded"; }
 
+# Modify these frequently for very routine stuff that you will do per project 
+jjgo() {
+  cd ~/dev/lab/rust/play
+}
+noin() { ./run.sh; }
+
+# Setup golang PATHS quickly
 jjsetup_go() {
-  export GOPATH=~/dev/goenv/1.9.3
+  export GOPATH=~/dev/goenv/1.12.6
   export GOBIN=$GOPATH/bin
   export PATH=$PATH:~/dev/local/go/bin:$GOBIN
 }
-jjgo() {
-  jjsetup_go 1.9.3
-  cd ~/dev/goenv/1.9.3/src/github.com/arrenyu/kantanai
-  # cd ~/dev/goenv/1.9.3/src/github.com/Stymphalian/ikuaki
-  # cd ~/dev/lab/tf
-}
+
+# open a tmux session
 jjt() {
   if [[ -z $1 ]]; then
     tmux new -s default -A
@@ -22,15 +25,11 @@ jjt() {
 }
 
 ##-----------------------------------------------------------------------------
+## Aliases
 ## ----------------------------------------------------------------------------
-## Misc Aliases
-noin() { ./run.sh; }
 
-### Make it easier to navigate back up directories
-### Usage: cd.. 5 
-cd_up() {
-  cd $(printf "%0.s../" $(seq 1 $1 ));  
-}
-
-# Aliases
-alias 'cd..'='cd_up'
+# cd .. frequent stuff
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias 'nvim=/home/jordan/bin/AppImages/nvim.appimage'
