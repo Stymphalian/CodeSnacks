@@ -86,6 +86,7 @@ packadd vim-airline-themes
 set hidden       "When a buffer is abandoned then unload the buffer
 set autoread     "auto-reload the file if it is detectedd as changed
 "set autochdir    "change to the directoy which contains the open file
+set path+=**     "recursivelly do a find for all subdirectories
 
 set smarttab     "when tab is pressed use tabstop number of spaces
 set tabstop=2    "number of spaces a tab in the file counts for
