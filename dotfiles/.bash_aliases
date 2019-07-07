@@ -1,6 +1,7 @@
 ### Easy access to the alias file
 jja() { vim ~/.bash_aliases  && jjr; }
 jjr() { source ~/.bash_aliases && echo "bash aliases reloaded"; }
+jjsnack() { cd ~/dev/github.com/Stymphalian/CodeSnacks; }
 
 # Modify these frequently for very routine stuff that you will do per project 
 jjgo() {
@@ -27,7 +28,6 @@ jjt() {
 ##-----------------------------------------------------------------------------
 ## Aliases
 ## ----------------------------------------------------------------------------
-
 # cd .. frequent stuff
 alias ..='cd ..'
 alias ...='cd ../..'
