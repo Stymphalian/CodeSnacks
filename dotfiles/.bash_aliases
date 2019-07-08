@@ -5,7 +5,9 @@ jjsnack() { cd ~/dev/github.com/Stymphalian/CodeSnacks; }
 
 # Modify these frequently for very routine stuff that you will do per project 
 jjgo() {
-  cd ~/dev/lab/rust/play
+  source ~/dev/lab/tf/setup.sh
+  cd ~/dev/lab/yolov3
+  #cd ~/dev/lab/rust/play
 }
 noin() { ./run.sh; }
 
