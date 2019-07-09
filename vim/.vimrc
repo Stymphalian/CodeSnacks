@@ -3,6 +3,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 set nocompatible
 let mapleader=','
+let iswork=0
 
 " ----------------------------------------------------------------------------
 " Start Plugins!!
@@ -34,8 +35,10 @@ packadd syntastic
 source ~/.vim/pack_vimrc/vim-signify/.vimrc          "<leader>c
 packadd vim-signify
 
-source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
-packadd YouCompleteMe
+if !iswork
+  source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
+  packadd YouCompleteMe
+endif
 
 "source ~/.vim/pack_vimrc/async.vim/.vimrc            "<leader>g
 "packadd async.vim 
@@ -49,10 +52,12 @@ packadd YouCompleteMe
 "source ~/.vim/pack_vimrc/asyncomplete.vim/.vimrc     "<leader>g
 "packadd asyncomplete.vim 
 
-source ~/.vim/pack_vimrc/rust.vim/.vimrc             "<leader>r
-packadd rust.vim  
+if !iswork 
+  source ~/.vim/pack_vimrc/rust.vim/.vimrc             "<leader>r
+  packadd rust.vim  
+endif
 
-source ~/.vim/pack_vimrc/vim-airline/.vimrc          "<leader>
+source ~/.vim/pack_vimrc/vim-airline/.vimrc          "empty
 packadd vim-airline 
 
 source ~/.vim/pack_vimrc/vim-numbertoggle/.vimrc     "empty
@@ -75,6 +80,9 @@ packadd vim-airline-themes
 
 "source ~/.vim/pack_vimrc/vim-easymotion/.vimrc       "empty
 "packadd vim-easymotion
+"
+"source ~/.vim/pack_vimrc/vim-sneak/.vimrc            "empty
+"packadd vim-sneak
 
 " ----------------------------------------------------------------------------
 " End Plugins!!
@@ -86,7 +94,9 @@ packadd vim-airline-themes
 set hidden       "When a buffer is abandoned then unload the buffer
 set autoread     "auto-reload the file if it is detectedd as changed
 "set autochdir    "change to the directoy which contains the open file
-set path+=**     "recursivelly do a find for all subdirectories
+if !iswork
+  set path+=**     "recursivelly do a find for all subdirectories
+endif
 
 set smarttab     "when tab is pressed use tabstop number of spaces
 set tabstop=2    "number of spaces a tab in the file counts for
@@ -101,10 +111,12 @@ set nowrap       "don't wrap the lines if it is longer than the split
 set backspace=indent,eol,start  whichwrap+=<,>,[,],h,l 
 
 set history=50           "keep up to 50 lines in the command-mode history
-set nobackup             "Do not create a backup before over-writing a file
-set backupdir=~/.vimbak  "Where to write backups to if you do write them
-set directory=~/.vimswap "Where to keep vim .swap files
-set undodir=~/.vimundo   "Where to keep vim undo files
+if !iswork 
+  set nobackup             "Do not create a backup before over-writing a file
+  set backupdir=~/.vimbak  "Where to write backups to if you do write them
+  set directory=~/.vimswap "Where to keep vim .swap files
+  set undodir=~/.vimundo   "Where to keep vim undo files
+endif
 
 set ruler               "show the line and columns number in the bottom status
 set colorcolumn=80,100  "color column 80 and column 100
@@ -159,6 +171,15 @@ nnoremap <leader>ve  :e ~/.vim/.vimrc<cr>Gj|  "Open the vimrc in a new vertical
 nnoremap <leader>vr  :source $MYVIMRC<cr>|    "Source the vimrc into the session
 
 " ---------------------------------------------------------------------------
+" Autocmds
+" ---------------------------------------------------------------------------
+if !iswork
+  augroup rust_autocmds
+    autocmd FileType rust iabbrev <buffer> jjlog  println!("@@@@ {:?}",)<left>
+  augroup END
+endif
+
+" ---------------------------------------------------------------------------
 " Make things look fancy.
 " ---------------------------------------------------------------------------
 syntax enable
@@ -186,8 +207,4 @@ endif
 " <op> aB  -- apply operator on block
 " <op> i"  -- apply operator on charcters between quote marks
 " <op> a"  -- apply operator on charcters between quote marks
-
-augroup rust_autocmds
-  autocmd FileType rust iabbrev <buffer> jjlog  println!("@@@@ {:?}",
-augroup END
 

@@ -64,3 +64,6 @@
 [submodule "vim/pack/default/opt/vim-signify"]
 	path = vim/pack/default/opt/vim-signify
 	url = https://github.com/mhinz/vim-signify
+[submodule "vim/pack/default/opt/vim-sneak"]
+	path = vim/pack/default/opt/vim-sneak
+	url = https://github.com/justinmk/vim-sneak
