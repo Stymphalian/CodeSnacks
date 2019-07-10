@@ -29,9 +29,6 @@ packadd nerdcommenter
 source ~/.vim/pack_vimrc/vim-buffergator/.vimrc      "<leader>b
 packadd vim-buffergator  
 
-source ~/.vim/pack_vimrc/syntastic/.vimrc            "empty
-packadd syntastic 
-
 source ~/.vim/pack_vimrc/vim-signify/.vimrc          "<leader>c
 packadd vim-signify
 
@@ -66,6 +63,12 @@ packadd vim-numbertoggle
 source ~/.vim/pack_vimrc/vim-airline-themes/.vimrc   "empty
 packadd vim-airline-themes 
 
+source ~/.vim/pack_vimrc/syntastic/.vimrc            "empty
+packadd syntastic 
+
+source ~/.vim/pack_vimrc/ctrlp-py-matcher/.vimrc     "empty
+packadd ctrlp-py-matcher
+
 "source ~/.vim/pack_vimrc/molokai/.vimrc              "empty
 "packadd molokai 
 
@@ -83,6 +86,7 @@ packadd vim-airline-themes
 "
 "source ~/.vim/pack_vimrc/vim-sneak/.vimrc            "empty
 "packadd vim-sneak
+"
 
 " ----------------------------------------------------------------------------
 " End Plugins!!
@@ -208,4 +212,7 @@ endif
 " <op> aB  -- apply operator on block
 " <op> i"  -- apply operator on charcters between quote marks
 " <op> a"  -- apply operator on charcters between quote marks
+" ;cw      -- show quickfix window
+" :ccl     -- close quickfix window
+" :grep! <vim regex pattern>   -- grep for a file
 

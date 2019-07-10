@@ -12,6 +12,10 @@ let g:ctrlp_custom_ignore = {
 " control. It also supports works with .svn, .hg, .bzr.
 let g:ctrlp_working_path_mode='ra'
 let g:ctrlp_map=''             "Use leader instead of the default mapping
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_lazy_update = 250  "only update preview after 250 ms
+let g:ctrlp_max_history = 0    "unlimited history
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:100000'
 let g:ctrlp_regexp=1           "by default have ctrlp serach by regex
 let g:ctrlp_use_caching=1      "disable any caching for ctrlp,
 let g:ctrlp_follow_symlinks=1  "follow symlinks but ignore loops
@@ -19,7 +23,8 @@ let g:ctrlp_follow_symlinks=1  "follow symlinks but ignore loops
 if executable('ag')
   " use ag instead of grep
   set grepprg=ag\ --nogroup\ --nocolor
-  " USe ag in ctrlp for listing files. super fast and respects .gitignore
+
+  " Use ag in ctrlp for listing files. super fast and respects .gitignore
   let g:ctrlp_user_command = '/usr/bin/ag %s -i --nocolor --nogroup --hidden 
     \ --ignore .git
     \ --ignore .svn
@@ -27,6 +32,14 @@ if executable('ag')
     \ --ignore .DS_store
     \ --ignore "**/*.pyc"
     \ -g ""'
+
+  "let g:ctrlp_directories = [
+  "      \ '/home/jordan/dev/lab/rust/play',
+  "      \ '/home/jordan/dev/lab/rust/play'
+  "      \ ]
+  "let g:ctrlp_user_command = join(map(copy(g:ctrlp_directories),
+  "      \ '''/usr/bin/ag '' . v:val . '' --nocolor --nogroup --ignore "**/*.pyc" --ignore .git --ignore .hg --ignore .DS_Store -g ""'''), ' ; ') 
+  "      \ . '/usr/bin/ag %s -i           --nocolor --nogroup --ignore "**/*.pyc" --ignore .git --ignore .hg --ignore .DS_Store -g "" ; ' 
 
 endif
         
