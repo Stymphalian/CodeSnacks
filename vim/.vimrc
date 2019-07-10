@@ -126,6 +126,7 @@ set cursorline          "highlight the linet he cursor is currently on
 
 set showcmd         "show partial-comands in the bottom bar
 set incsearch       "As you do '/' comamnds serach, highlight the findings
+set nohlsearch      "don't highlight when '/' searching
 set wildmenu        "in command-mode, pressing tab show sugests in line above
 set timeoutlen=350  "time in ms to wait for a key mapped seq to complete
 

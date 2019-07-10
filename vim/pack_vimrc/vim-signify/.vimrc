@@ -10,4 +10,5 @@ nmap <leader>cj <plug>(signify-next-hunk)
 nmap <leader>ck <plug>(signify-prev-hunk)
 nmap <leader>cJ 9999<leader>cj 
 nmap <leader>cK 9999<leader>ck 
+nnoremap <leader>ct :SignifyToggle<cr>
 

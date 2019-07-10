@@ -23,7 +23,7 @@ jjt() {
   if [[ -z $1 ]]; then
     tmux new -s default -A
   else
-    tmux a -t $1
+    tmux new -s $1 -A
   fi
 }
 
