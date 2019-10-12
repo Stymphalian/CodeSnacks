@@ -103,8 +103,8 @@ if [[ -d "$HOME/bin" ]]; then
 fi
 
 # miniconda
-if [[ -d "/home/jordan/opt/miniconda3/bin" ]]; then
-  PATH="$PATH:/home/jordan/opt/miniconda3/bin"
+if [[ -d "/home/jordan/miniconda3/bin" ]]; then
+  PATH="$PATH:/home/jordan/miniconda3/bin"
 fi
 
 # Setup JAVA

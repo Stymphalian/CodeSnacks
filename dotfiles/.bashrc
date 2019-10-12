@@ -136,4 +136,20 @@ if [ -f '/home/jordan/opt/google-cloud-sdk/path.bash.inc' ]; then source '/home/
 if [ -f '/home/jordan/opt/google-cloud-sdk/completion.bash.inc' ]; then source '/home/jordan/opt/google-cloud-sdk/completion.bash.inc'; fi
 
 # added by Miniconda3 installer
-export PATH="/home/jordan/opt/miniconda3/bin:$PATH"
+# export PATH="/home/jordan/opt/miniconda3/bin:$PATH"  # commented out by conda initialize
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jordan/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/jordan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jordan/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/jordan/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

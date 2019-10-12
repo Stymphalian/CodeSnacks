@@ -29,12 +29,12 @@ packadd nerdcommenter
 source ~/.vim/pack_vimrc/vim-buffergator/.vimrc      "<leader>b
 packadd vim-buffergator  
 
-source ~/.vim/pack_vimrc/vim-signify/.vimrc          "<leader>c
-packadd vim-signify
+"source ~/.vim/pack_vimrc/vim-signify/.vimrc          "<leader>c
+"packadd vim-signify
 
 if !iswork
-  source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
-  packadd YouCompleteMe
+  "source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
+  "packadd YouCompleteMe
 endif
 
 "source ~/.vim/pack_vimrc/async.vim/.vimrc            "<leader>g
