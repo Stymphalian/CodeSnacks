@@ -12,3 +12,4 @@ Currently this only has JS snippets.
 * Config settings for IDE (Visual Studio,Eclipse)
 * bash.rc
 
+* force push
