@@ -3,7 +3,7 @@
 
 " Setup some default ignores
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|__pycache__|venv|\.venv)$',
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
 \}
 
@@ -17,8 +17,9 @@ let g:ctrlp_lazy_update = 250  "only update preview after 250 ms
 let g:ctrlp_max_history = 0    "unlimited history
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:100000'
 let g:ctrlp_regexp=1           "by default have ctrlp serach by regex
-let g:ctrlp_use_caching=1      "disable any caching for ctrlp,
-let g:ctrlp_follow_symlinks=1  "follow symlinks but ignore loops
+let g:ctrlp_use_caching=0      "disable any caching for ctrlp,
+let g:ctrlp_follow_symlinks=0  "follow symlinks but ignore loops
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:0'
 
 if executable('ag')
   " use ag instead of grep
@@ -31,6 +32,8 @@ if executable('ag')
     \ --ignore .hg
     \ --ignore .DS_store
     \ --ignore "**/*.pyc"
+    \ --ignore .venv
+    \ --ignore venv
     \ -g ""'
 
   "let g:ctrlp_directories = [
@@ -44,7 +47,7 @@ if executable('ag')
 endif
         
 " Easy bindings for its various modes
-nmap <leader>p :CtrlP<cr>
-nmap <leader>p1 :CtrlPBuffer<cr>
-nmap <leader>p2 :CtrlPMixed<cr>
-nmap <leader>p3 :CtrlPMRU<cr>
+nmap <leader>m :CtrlP<cr>
+nmap <leader>m1 :CtrlPBuffer<cr>
+nmap <leader>m2 :CtrlPMixed<cr>
+nmap <leader>m3 :CtrlPMRU<cr>

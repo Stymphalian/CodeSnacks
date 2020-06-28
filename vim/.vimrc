@@ -31,6 +31,9 @@ packadd vim-buffergator
 
 "source ~/.vim/pack_vimrc/vim-signify/.vimrc          "<leader>c
 "packadd vim-signify
+"
+"source ~/.vim/pack_vimrc/syntastic/.vimrc            "empty
+"packadd syntastic 
 
 if !iswork
   "source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
@@ -88,6 +91,9 @@ packadd ctrlp-py-matcher
 "packadd vim-sneak
 "
 
+"source ~/.vim/pack_vimrc/python-mode/.vimrc           "empty
+"packadd python-mode
+
 " ----------------------------------------------------------------------------
 " End Plugins!!
 " ----------------------------------------------------------------------------
@@ -113,6 +119,7 @@ set nowrap       "don't wrap the lines if it is longer than the split
 "makes insert-mode backspace work as expected
 "makes insert-mode arrow keys work as expected
 set backspace=indent,eol,start  whichwrap+=<,>,[,],h,l 
+set listchars=tab:→\ ,extends:›,precedes:‹,trail:·,eol:↲,nbsp:␣,space:·
 
 set history=50           "keep up to 50 lines in the command-mode history
 if !iswork 
@@ -153,7 +160,9 @@ let loaded_matchparen=1  "Disable '{' highlight matching
 "inoremap <C-Space> <C-x><C-o>  "Remap CTRL-space to omnicomplete
 "inoremap <C-@> <C-Space>|      "Remap <NUL> char to <CTRL-space>
 inoremap jk <C-[>|    "Map "j + k" to ESC in insert-mode
+"inoremap kj <C-[>|    "Map "j + k" to ESC in insert-mode
 vnoremap jk <C-[>|    "Map "j + k" to ESC in visual mode
+"vnoremap kj <C-[>|    "Map "j + k" to ESC in visual mode
 nnoremap <C-J> <C-E>| "Map "CTRL + j" to line scrolling down in normal mode
 nnoremap <C-K> <C-Y>| "Map "Ctrl + k" to line scrolling up in normal mode
 nnoremap HH H|        "Map "H + H" to go to the top of the visible screen
@@ -216,3 +225,12 @@ endif
 " :ccl     -- close quickfix window
 " :grep! <vim regex pattern>   -- grep for a file
 
+set pastetoggle=<leader>sp
+
+" in command-mode, search mode etc use <CTRL-R> to print the contents of a 
+" register
+" v - visual mode
+" y - yank the selected text
+" / - enter search mode
+" <CTRL-R> - paste contents of regest
+" <search register>
