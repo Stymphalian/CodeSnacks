@@ -36,8 +36,8 @@ packadd vim-buffergator
 "packadd syntastic 
 
 if !iswork
-  "source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
-  "packadd YouCompleteMe
+  source ~/.vim/pack_vimrc/YouCompleteMe/.vimrc        "<leader>g
+  packadd YouCompleteMe
 endif
 
 "source ~/.vim/pack_vimrc/async.vim/.vimrc            "<leader>g
@@ -87,9 +87,8 @@ packadd ctrlp-py-matcher
 "source ~/.vim/pack_vimrc/vim-easymotion/.vimrc       "empty
 "packadd vim-easymotion
 "
-"source ~/.vim/pack_vimrc/vim-sneak/.vimrc            "empty
-"packadd vim-sneak
-"
+source ~/.vim/pack_vimrc/vim-sneak/.vimrc            "empty
+packadd vim-sneak
 
 "source ~/.vim/pack_vimrc/python-mode/.vimrc           "empty
 "packadd python-mode
@@ -234,3 +233,14 @@ set pastetoggle=<leader>sp
 " / - enter search mode
 " <CTRL-R> - paste contents of regest
 " <search register>
+"sudjj
+
+" sudo apt-get install vim-gtk to have a version of vim which enables the
+" clipboard
+" re-mapping Ctrl+c, ctrl-v for clipboard copying
+"vmap <C-c> "+yi
+"vmap <C-x> "+c
+"vmap <C-v> c<ESC>"+p
+"imap <C-v> <ESC>"+pa
+" :echo g:SuperTabDefaultCompletionType
+

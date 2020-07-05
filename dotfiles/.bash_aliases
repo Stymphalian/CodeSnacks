@@ -3,6 +3,10 @@ jja() { vim ~/.bash_aliases  && jjr; }
 jjr() { source ~/.bash_aliases && echo "bash aliases reloaded"; }
 jjsnack() { cd ~/dev/github.com/Stymphalian/CodeSnacks; }
 
+jjalarm() {
+  sleep $1 && mplayer ~/Music/alarm.mp3 > /dev/null 2>&1
+}
+
 # Modify these frequently for very routine stuff that you will do per project 
 jjgo() {
   cd ~/dev/lab/tf
@@ -43,3 +47,4 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias 'nvim=/home/jordan/bin/AppImages/nvim.appimage'
+alias hist='history | cut -c 8-'
