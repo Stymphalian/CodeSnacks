@@ -9,17 +9,8 @@ jjalarm() {
 
 # Modify these frequently for very routine stuff that you will do per project 
 jjgo() {
-  cd ~/dev/lab/tf
-  source ~/dev/lab/tf/setup.sh
-  source ./venv/bin/activate
-  #cd ~/dev/lab/rust/play
-}
-jjgo2() {
-  cd ~/dev/lab/tf/tf2
-  source ~/dev/lab/tf/tf2/setup.sh
-  source ~/dev/lab/tf/tf2/venv/bin/activate
-  #source ./venv/bin/activate
-  #cd ~/dev/lab/tf/github.com/matterport
+  cd ~/dev/lab/smashml
+  source .venv/bin/activate
 }
 noin() { ./run.sh; }
 

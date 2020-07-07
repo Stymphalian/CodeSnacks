@@ -53,8 +53,8 @@ endif
 "packadd asyncomplete.vim 
 
 if !iswork 
-  source ~/.vim/pack_vimrc/rust.vim/.vimrc             "<leader>r
-  packadd rust.vim  
+  "source ~/.vim/pack_vimrc/rust.vim/.vimrc             "<leader>r
+  "packadd rust.vim  
 endif
 
 source ~/.vim/pack_vimrc/vim-airline/.vimrc          "empty
@@ -66,8 +66,8 @@ packadd vim-numbertoggle
 source ~/.vim/pack_vimrc/vim-airline-themes/.vimrc   "empty
 packadd vim-airline-themes 
 
-source ~/.vim/pack_vimrc/syntastic/.vimrc            "empty
-packadd syntastic 
+"source ~/.vim/pack_vimrc/syntastic/.vimrc            "empty
+"packadd syntastic 
 
 source ~/.vim/pack_vimrc/ctrlp-py-matcher/.vimrc     "empty
 packadd ctrlp-py-matcher
@@ -92,6 +92,9 @@ packadd vim-sneak
 
 "source ~/.vim/pack_vimrc/python-mode/.vimrc           "empty
 "packadd python-mode
+
+"source ~/.vim/pack_vimrc/vim-surround/.vimrc        "empty
+"packadd vim-surround
 
 " ----------------------------------------------------------------------------
 " End Plugins!!
@@ -143,6 +146,8 @@ set timeoutlen=350  "time in ms to wait for a key mapped seq to complete
 set nomodeline             "Disable reading modeline snppets from the file
 set mouse=a                "Enable the mouse"
 let loaded_matchparen=1  "Disable '{' highlight matching
+
+set lazyredraw      "Faster macros appliction
 
 " -----------------------------------------------------------------------------
 " Custom key-mappings
@@ -231,7 +236,7 @@ set pastetoggle=<leader>sp
 " v - visual mode
 " y - yank the selected text
 " / - enter search mode
-" <CTRL-R> - paste contents of regest
+" <CTRL-R> - paste contents of register
 " <search register>
 "sudjj
 
