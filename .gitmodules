@@ -73,3 +73,6 @@
 [submodule "vim/pack/default/opt/vim-suround"]
 	path = vim/pack/default/opt/vim-suround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim/pack/default/opt/vim-surround"]
+	path = vim/pack/default/opt/vim-surround
+	url = https://github.com/tpope/vim-surround
