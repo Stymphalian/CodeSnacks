@@ -93,8 +93,11 @@ packadd vim-sneak
 "source ~/.vim/pack_vimrc/python-mode/.vimrc           "empty
 "packadd python-mode
 
-"source ~/.vim/pack_vimrc/vim-surround/.vimrc        "empty
-"packadd vim-surround
+source ~/.vim/pack_vimrc/vim-surround/.vimrc        "empty
+packadd vim-surround
+
+source ~/.vim/pack_vimrc/vim-glsl/.vimrc            "empty
+packadd vim-glsl
 
 " ----------------------------------------------------------------------------
 " End Plugins!!

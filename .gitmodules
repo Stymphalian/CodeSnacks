@@ -70,9 +70,9 @@
 [submodule "vim/pack/default/opt/ctrlp-py-matcher"]
 	path = vim/pack/default/opt/ctrlp-py-matcher
 	url = https://github.com/FelikZ/ctrlp-py-matcher
-[submodule "vim/pack/default/opt/vim-suround"]
-	path = vim/pack/default/opt/vim-suround
-	url = https://github.com/tpope/vim-surround
 [submodule "vim/pack/default/opt/vim-surround"]
 	path = vim/pack/default/opt/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim/pack/default/opt/vim-glsl"]
+	path = vim/pack/default/opt/vim-glsl
+	url = https://github.com/tikhomirov/vim-glsl

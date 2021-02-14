@@ -3,7 +3,7 @@
 
 " Setup some default ignores
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|__pycache__|venv|\.venv)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|__pycache__|venv|\.venv|thirdparty)$',
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
 \}
 
@@ -42,7 +42,8 @@ if executable('ag')
   "let g:ctrlp_user_command = join(map(copy(g:ctrlp_directories),
   "      \ '''/usr/bin/ag '' . v:val . '' --nocolor --nogroup --ignore "**/*.pyc" --ignore .git --ignore .hg --ignore .DS_Store -g ""'''), ' ; ') 
   "      \ . '/usr/bin/ag %s -i           --nocolor --nogroup --ignore "**/*.pyc" --ignore .git --ignore .hg --ignore .DS_Store -g "" ; ' 
-
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 endif
         
 " Easy bindings for its various modes
