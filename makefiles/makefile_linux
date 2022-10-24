@@ -1,34 +1,37 @@
-CC=gcc
-CTYPE=c
-CFLAGS=-c -ansi -Wall
+CXX=clang++
+#CTYPE=cc
+CFLAGS=-c -ansi -Wall -std=c++17
 INFLAGS=-Iinclude
-LDFLAGS=-L.
+#LDFLAGS=-L.
+LDFLAGS=-lglfw -lm -lGL -lGLEW -lassimp -lstdc++fs
 
-OBJDIR:=objdir
-SOURCES=main.$(CTYPE)
-OBJECTS=$(addprefix $(OBJDIR)/, $(SOURCES:.($CTYPE)=.o) )
+OBJDIR=build
+SRCDIR=src
+
+PURE_SOURCES=main.cc
+SOURCES=$(addprefix $(SRCDIR)/, $(PURE_SOURCES) )
+OBJECTS=$(addprefix $(OBJDIR)/, $(PURE_SOURCES:.cc=.o) )
 
 EXECUTABLE=noin
 
-# -g allow for debugging
-# -E  amcro expanded
+#-g allow for debugging
+#-E macro expanded
 # -pg
-# -S
-
 
 all: $(SOURCES) $(EXECUTABLE)
 
-$(OBJDIR)/%.o: %.$(CTYPE)
-   $(CC) $(CFLAGS) $(INFLAGS) $< -o $@
+$(OBJDIR)/%.o: $(SRCDIR)/%.cc
+	$(CXX) $(CFLAGS) $(INFLAGS) $< -o $@
 
 $(EXECUTABLE): $(OBJECTS)
-   $(CC) -o $@ $(OBJECTS) $(LDFLAGS)
+	$(CXX) -o $@ $(OBJECTS) $(LDFLAGS)
 
 $(OBJECTS): | $(OBJDIR)
 $(OBJDIR):
 	mkdir $(OBJDIR)
 
-clean:
-	rm -rf $(OBJDIR)  noin* *.o
-~
+rm_noin:
+	rm -f noin
 
+clean: rm_noin
+	rm -rf $(OBJDIR) *.o

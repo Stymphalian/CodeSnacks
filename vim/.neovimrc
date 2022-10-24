@@ -10,7 +10,7 @@ set clipboard+=unnamedplus
 tnoremap jk  <C-\><C-n>|                           
 
 "Run the last command from the terminal
-nnoremap <leader>m  i<up><cr><cr>|                 
+"nnoremap <leader>m  i<up><cr><cr>|                 
 
 "paste what you last yanked and then run the previous command
-nnoremap <leader>mp i<up> <C-\><C-n>pi<cr><cr>|     
+"nnoremap <leader>mp i<up> <C-\><C-n>pi<cr><cr>|     
